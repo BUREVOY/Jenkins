@@ -14,7 +14,7 @@ pipeline {
         post {
             success {
             // Архивируем артефакты после успешной сборки
-                archiveArtifacts artifacts: './App/bin/Release/net8.0/publish', fingerprint: true
+                archiveArtifacts artifacts: './App/bin/Release/net8.0/publish/**', fingerprint: true
             }
         }
 
