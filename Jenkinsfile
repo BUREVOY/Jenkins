@@ -17,7 +17,8 @@ pipeline {
     post {
         success {
             // Архивируем артефакты после успешной сборки
-            archiveArtifacts artifacts: 'App/**', fingerprint: true
+            //archiveArtifacts artifacts: 'App/**', fingerprint: true
+            bat 'xcopy /s /y "App\\*" "%WORKSPACE%"'
         }
     }
 }
