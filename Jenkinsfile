@@ -5,8 +5,26 @@ pipeline {
         stage('Build') {
             steps {
                 echo "first pipeline"
-                sh "ls -la"
+                
             }
         }
+        stage('Clone Repository') {
+            steps {
+                // Клонируем репозиторий Git
+                script {
+                    git 'clone https://github.com/BUREVOY/Jenkins.git'
+                }
+            }
+        }
+        
+        stage('List Repository Contents') {
+            steps {
+                // Выводим содержимое репозитория
+                script {
+                    sh 'ls -la'
+                }
+            }
+        }
+
     }
 }
