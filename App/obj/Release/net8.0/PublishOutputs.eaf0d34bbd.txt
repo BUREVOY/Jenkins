@@ -1,0 +1,5 @@
+C:\Users\Арсений\Desktop\практика\для веба\jenkins\App\bin\Release\net8.0\publish\DotNet.Docker.exe
+C:\Users\Арсений\Desktop\практика\для веба\jenkins\App\bin\Release\net8.0\publish\DotNet.Docker.dll
+C:\Users\Арсений\Desktop\практика\для веба\jenkins\App\bin\Release\net8.0\publish\DotNet.Docker.deps.json
+C:\Users\Арсений\Desktop\практика\для веба\jenkins\App\bin\Release\net8.0\publish\DotNet.Docker.runtimeconfig.json
+C:\Users\Арсений\Desktop\практика\для веба\jenkins\App\bin\Release\net8.0\publish\DotNet.Docker.pdb
