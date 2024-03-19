@@ -7,7 +7,7 @@ pipeline {
                 echo "Start of Stage Build"
                 echo "Building......."
                 bat   "dir App"
-                bat   "echo hello > file.txt"
+                echo   "hello > file.txt"
                 echo "End of Stage Build"
             }
         }
