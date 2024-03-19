@@ -18,7 +18,9 @@ pipeline {
         success {
             // Архивируем артефакты после успешной сборки
             //archiveArtifacts artifacts: 'App/**', fingerprint: true
-            bat 'xcopy /s /y "App\\*" "%WORKSPACE%"'
+            // bat 'xcopy /s /y "App\\*" "%WORKSPACE%"'
+            bat 'copy /y "App\\bin\\Release\\net8.0\\DotNet.Docker.exe" "%WORKSPACE%"'
+
         }
     }
 }
