@@ -6,9 +6,7 @@ pipeline {
             steps {
                 echo "Start of Stage Build"
                 echo "Building......."
-                bat   "dir"
-                bat   "cd App"
-                bat   "dir"
+                bat   "dir App"
                 echo "End of Stage Build"
             }
         }
