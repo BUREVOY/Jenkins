@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo "first pipeline"
-                
+                sh "dir"
             }
         }
     }
