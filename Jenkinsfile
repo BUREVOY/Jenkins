@@ -11,7 +11,7 @@ pipeline {
                         script {
                         // Выполняем сборку Docker образа
                         bat 'docker build -t jenk -f Dockerfile .'
-                        bat 'docker run -it --rm jenk'
+                        bat 'winpty docker run -it --rm jenk'
                     }
                 }
                 
