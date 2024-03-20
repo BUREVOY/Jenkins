@@ -11,7 +11,12 @@ pipeline {
                 bat   "dir App"
                 dir("${env.WORKSPACE}/App") {
                     bat 'dir'
+                        script {
+                        // Выполняем сборку Docker образа
+                        bat 'docker build -t jenk -f Dockerfile .'
+                    }
                 }
+                
                 echo "End of Stage Build"
             }
         }
