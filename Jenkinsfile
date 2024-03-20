@@ -3,21 +3,19 @@ pipeline {
     
     stages {
         stage('Build') {
-            steps {
-                // Ваш шаг сборки проекта
-                
-                echo "Start of Stage Build"
-                echo "Building......."
+            steps {                
+                echo "В начале было слово"
                 bat   "dir App"
                 dir("${env.WORKSPACE}/App") {
                     bat 'dir'
                         script {
                         // Выполняем сборку Docker образа
                         bat 'docker build -t jenk -f Dockerfile .'
+                        bat 'docker run -it --rm jenk'
                     }
                 }
                 
-                echo "End of Stage Build"
+                echo "congragulations..."
             }
         }
     }
