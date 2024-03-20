@@ -11,7 +11,7 @@ pipeline {
                         script {
                         // Выполняем сборку Docker образа
                         bat 'docker build -t jenk -f Dockerfile .'
-                        bat 'docker run -d jenk'
+                        bat 'docker run jenk'
                     }
                 }
                 
